@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .site-content {
+    flex: 1;
+  }
+  
+  .footer {
+    background: linear-gradient(45deg, #3498db, rgb(50, 155, 59)); 
+    color: white;
+    padding: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+  }
+  
