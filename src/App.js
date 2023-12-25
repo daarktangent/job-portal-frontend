@@ -2,7 +2,8 @@ import './App.css';
 import JobList from './Pages/JobList';
 import HomePages from './Pages/HomePages';
 import SiteHeader from './Component/SiteHeader';
-import SiteFooter from './Component/SiteFooter'
+import SiteFooter from './Component/SiteFooter';
+import JobDetails from './Pages/JobDetails';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePages />} />
           <Route path="/home" element={<JobList />} />
+          <Route path="/details/:id" element={<JobDetails/>}/>
         </Routes>
       </BrowserRouter>
       <SiteFooter/>
