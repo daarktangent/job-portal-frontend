@@ -21,7 +21,8 @@ function JobList() {
     try {
       const api = await fetch(`http://localhost:1337/api/jobs`);
       const data = await api.json();
-      setJobs(data.data); // Update the state with the fetched data
+      console.log(data);
+      setJobs(data.data);
     } catch (error) {
       console.error('Error fetching jobs:', error);
     }
