@@ -35,7 +35,7 @@ const styles = {
 
 function JobDetails() {
   const { id } = useParams();
-  const { loading, error, data } = Fetch(`http://localhost:1337/api/jobs/${id}`);
+  const { loading, error, data } = Fetch(`https://fearless-benefit-9323de260e.strapiapp.com/api/jobs/${id}`);
 
   if (loading) {
     return <p>Loading...</p>;

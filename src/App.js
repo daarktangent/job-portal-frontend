@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ApolloClient,InMemoryCache,ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:1337/graphql',
+  uri: 'https://fearless-benefit-9323de260e.strapiapp.com/graphql',
   cache: new InMemoryCache()
 });
 
